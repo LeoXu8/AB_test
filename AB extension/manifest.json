@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Change A to B",
+    "description": "This extension changes every letter a to b on a website",
+    "version": "1.0",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
